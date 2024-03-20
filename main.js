@@ -12,6 +12,7 @@ $(".active button").click(function () {
 })
 
 $(".list button").click(function () {
+    $(".active p").html($(this).html())
     let blur = $(this).attr("quality");
     let transcale = $(this).attr("transcale");
     $(".img").css({ "filter": "blur(" + blur + ")", "background-image": "url(moon.avif)", "transform": "scale(" + transcale + ")" })
@@ -22,6 +23,10 @@ $(".choose").click(function () {
     setTimeout(function () {
         var audio = new Audio("aml.m4a");
         audio.play();
+        $(this).find("i").addClass("fa-caret-down").removeClass("fa-caret-up")
+        $(this).attr("power", "off");
+        $(".list").slideUp();
+        $(".active p").html("I Fill In Love with the moon")
     }, 400)
 })
 
