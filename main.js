@@ -23,8 +23,8 @@ $(".choose").click(function () {
     setTimeout(function () {
         var audio = new Audio("aml.m4a");
         audio.play();
-        $(this).find("i").addClass("fa-caret-down").removeClass("fa-caret-up")
-        $(this).attr("power", "off");
+        $(".active button").find("i").addClass("fa-caret-down").removeClass("fa-caret-up")
+        $(".active button").attr("power", "off");
         $(".list").slideUp();
         $(".active p").html("I Fill In Love with the moon")
     }, 400)
