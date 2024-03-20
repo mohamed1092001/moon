@@ -26,7 +26,7 @@ $(".choose").click(function () {
         $(".active button").find("i").addClass("fa-caret-down").removeClass("fa-caret-up")
         $(".active button").attr("power", "off");
         $(".list").slideUp();
-        $(".active p").html("I Fill In Love with the moon")
+        $(".active p").html("I Fill In Love With This Moon")
     }, 400)
 })
 
